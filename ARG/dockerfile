@@ -1,2 +1,5 @@
 ARG version
 FROM almalinux:${version:-9}
+ARG COURSE="docker"\
+    TRAINER="siva"
+RUN echo "Trainer is ${TRAINER}"
